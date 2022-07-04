@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Model</title>
+</head>
+<body>
+    <div style="color: red;">Hello </div>
+    <script type="module">
+        import CSSOM from "./CSSOM.js";
+        const l = new CSSOM(document.body);
+        document.body.innerText = (l.css)
+    </script>
+</body>
+</html>
